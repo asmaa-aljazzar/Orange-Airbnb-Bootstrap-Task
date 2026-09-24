@@ -14,7 +14,6 @@
     <header>
         <!-- Start Navbar -->
         <nav class="navbar-wrapper fixed-top bg-white">
-
             <!-- Main navbar -->
             <div class="container-fluid navbar-main">
 
@@ -31,7 +30,7 @@
                 </div>
 
                 <!-- Right side -->
-                <div class="d-flex align-items-center gap-3">
+                <div class="right-side d-flex align-items-center gap-3">
                     <span>Become a host</span>
                     <button><img src="./images/web.svg" alt=""></button>
                     <button><img src="./images/toggle.svg" alt=""></button>
@@ -41,28 +40,184 @@
 
 
             <!-- Large search -->
-            <div class="large-search">
-                <div>Where<br><span>Search destinations</span></div>
-                <div>When<br><span>Add dates</span></div>
-                <div>Who<br><span>Add guests</span></div>
-                <button><img src="./images/search.svg" alt=""></button>
+            <div class="large-search position-relative w-75 sw-75 h-50 mx-auto d-flex align-items-center border border-1 rounded-pill shadow-lg overflow-hidden">
+                <div class="position-relative cursor px-2 hover-box h-100 ps-4 d-flex flex-column justify-content-center align-items-start rounded-pill">Where<br><span class="fw-light">Search destinations</span> <div class="h-50 end-0 position-absolute"></div></div>
+                <div class="position-relative cursor px-2 hover-box h-100 ps-4 d-flex flex-column justify-content-center align-items-start rounded-pill">When<br><span class="fw-light">Add dates</span> <div class="h-50 end-0 position-absolute"></div></div>
+                <div class="position-relative cursor px-2 hover-box h-100 ps-4 d-flex flex-column justify-content-center align-items-start rounded-pill">Who<br><span class="fw-light">Add guests</span> <div class="h-50 end-0 position-absolute border-0"></div></div>
+                <button class="large-search-btn border-0 position-absolute rounded-circle d-flex align-items-center justify-content-center ms-2"><img src="./images/search.svg" alt=""></button>
             </div>
 
 
             <!-- Compact search -->
-            <div class="compact-search">
-                <img src="./images/house.png" alt="">
-                <span><strong>Anywhere</strong></span>
-                <span>Anytime</span>
-                <span>Add guests</span>
-                <button><img src="./images/search.svg" alt=""></button>
+            <div class="border border-1 shadow-lg rounded-pill compact-search h-50 px-2 position-absolute align-items-center  gap-2 d-flex start-50 overflow-hidden">
+                <div class="h-100 d-flex justify-content-center align-items-center ">
+                    <img class="w-100 h-100" src="./images/house.png" alt="">
+                </div>
+                <div class="h-100 d-flex justify-content-center align-items-center p-1 hover-box">
+                    <span class="">Anywhere</span>
+                </div>
+                <div class="h-100 d-flex justify-content-center align-items-center p-1 hover-box">
+                    <span>Anytime</span>
+                </div>
+                <div class="h-100 d-flex justify-content-center align-items-center p-1 hover-box">
+                    <span>Add guests</span>
+                </div>
+                <button class="d-flex justify-content-center align-items-center"><img class="w-50 h-50" src="./images/search.svg" alt=""></button>
             </div>
 
         </nav>
         <!-- End Navbar -->
     </header>
 
-    <main>
+    <main class="overflow-hidden">
+        <h4 class="mx-3">Popular homes in Dubai</h4>
+        <div class="row mt-3 mx-1">
+            <div class="col-2">
+                <div class="card border-0">
+                    <img class="w-100" src="./images/1.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+                    
+                    <img class="w-100" src="./images/6.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/2.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/3.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/4.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/5.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="mx-3">Great hotels for your next trip</h4>
+        <div class="row mt-3 mx-1">
+            <div class="col-2">
+                <div class="card border-0">
+                    <img class="w-100" src="./images/7.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/8.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/9.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/10.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/11.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card border-0">
+
+                    <img class="w-100" src="./images/12.jpeg" alt="apartment">
+                    <div class="d-flex flex-column mb-1">
+                        <h6 class="text-md">Apartment in Downtown Dubai</h6>
+                        <p class="small-p">
+                            JD 540 for 2 nights ★ 4.86
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 

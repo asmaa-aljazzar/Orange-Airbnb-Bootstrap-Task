@@ -25,7 +25,10 @@
     width: 155px;
 }
 
-
+.right-side img{
+    width: 30px;
+    height: 30px;
+}
 /* Categories */
 
 
@@ -66,48 +69,27 @@
     height: 25px;
 }
 
-
-/* Large Search */
-
-.large-search {
-    width: min(70%, 1000px);
-    height: 60px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    border: 1px solid #ddd;
-    border-radius: 50px;
-    box-shadow: 0 4px 12px #00000014;
-    padding: 0 15px;
+.cursor {
+    cursor: pointer;
 }
 
-.large-search > div {
-    flex: 1;
-    padding: 0 30px;
-    font-weight: 600;
+/** To Stay */
+.large-search div {
+    width: 33%;
 }
 
-.large-search > div + div {
-    border-left: 1px solid #ddd;
+.large-search div {
+    width: 34%;
 }
 
-.large-search span {
-    font-weight: 400;
-    color: #666;
-}
-
-.large-search button {
+.large-search-btn {
     width: 50px;
     height: 50px;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    right: 10px;
     background: #e41446;
 }
 
-.large-search button img {
+.large-search-btn img {
     width: 28px;
     height: 28px;
 }
@@ -116,41 +98,41 @@
 /* Compact Search */
 
 .compact-search {
-    position: absolute;
     top: 20px;
-    left: 50%;
-    transform: translate(-50%, 20px);
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    height: 65px;
-    padding: 0 12px;
-    border: 1px solid #ddd;
-    border-radius: 40px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     cursor: pointer;
 }
 
-.compact-search > img {
-    width: 35px;
-    height: 35px;
-    object-fit: contain;
-}
-
 .compact-search button {
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
     border: none;
     border-radius: 50%;
     background: #e41446;
     cursor: pointer;
 }
 
-.compact-search button img {
-    width: 20px;
+
+.hover-box:hover {
+    background-color: #dee2e6;
 }
 
-.compact-search span:hover {
-    background-color: #666;
+
+.hover-box div {
+    border-right: 2px solid #dee2e6;
 }
+
+
+
+.large-search .hover-box:hover div.position-absolute {
+    border: none
+}
+
+.large-search:has(.hover-box:nth-child(2):hover) .hover-box:nth-child(1) div.position-absolute {
+    border: none
+}
+
+.large-search:has(.hover-box:nth-child(3):hover) .hover-box:nth-child(2) div.position-absolute {
+    border: none
+}
+
